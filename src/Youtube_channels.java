@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class Youtube_channel implements Observable{
+public class Youtube_channels implements Observable{
     List<String>channels = new ArrayList<>();
     List<Observer>subcribers = new ArrayList<>();
     public void addchannel(String channel){
