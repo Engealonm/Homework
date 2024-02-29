@@ -4,7 +4,7 @@ public class Subcriber implements Observer{
     public Subcriber(String name){
         this.name = name;
     }
-    public void updates(List<String> vacancies){
-        System.out.println("Dear"+name+"\nWe have changes\n"+vacancies);
+    public void updates(List<String> channels){
+        System.out.println("Dear"+name+"\nWe have changes\n"+channels);
     }
 }

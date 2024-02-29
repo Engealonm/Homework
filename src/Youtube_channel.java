@@ -1,15 +1,15 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class JobSite implements Observable{
-    List<String>vacancies = new ArrayList<>();
+public class Youtube_channel implements Observable{
+    List<String>channels = new ArrayList<>();
     List<Observer>subcribers = new ArrayList<>();
-    public void addvacancy(String vacancy){
-        this.vacancies.add(vacancy);
+    public void addchannel(String channel){
+        this.channels.add(channel);
         notifyObservers();
     }
-    public void removevacancy(String vacancy){
-        this.vacancies.remove(vacancy);
+    public void removechannel(String channel){
+        this.channels.remove(channel);
         notifyObservers();
     }
     public void register(Observer observer){
@@ -22,7 +22,7 @@ public class JobSite implements Observable{
     }
     public void notifyObservers(){
         for(Observer observer : subcribers){
-            observer.updates(this.vacancies);
+            observer.updates(this.channels);
         }
 
     }
